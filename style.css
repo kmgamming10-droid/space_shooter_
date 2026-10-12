@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #050510;
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#game-container {
+  position: relative;
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.4);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#ui {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #00e5ff;
+  text-shadow: 0 0 8px rgba(0, 229, 255, 0.8);
+}
+
+canvas {
+  background-color: #020208;
+  display: block;
+}
+/* Add at the bottom of style.css */
+#gameCanvas {
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-crisp-edges;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0d0d1a;
+  color: #ffffff;
+  font-family: sans-serif;
+  text-align: center;
+  overflow: hidden; /* Prevents whole page scrolling */
+}
+
+/* Make sure your #gameCanvas block looks like this */
+#gameCanvas {
+  display: block;
+  margin: 10px auto;
+  border: 2px solid #00ffcc;
+  border-radius: 10px;
+  background-color: #000000;
+  touch-action: none; /* Prevents phone scrolling while dragging your ship */
+  
+  /* Keeps graphics crisp on mobile screens */
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-crisp-edges;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
